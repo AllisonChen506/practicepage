@@ -1,7 +1,7 @@
-function updateTitle()
-{
-    // TO DO
-    // Make this function change the text to "Title Updated"
-    document.getElementById("title").innerHTML = "Title Updated"
 
+/* Make this function print a random title from the list */
+function updateTitle() {
+    const titles = ['title1', 'title2', 'title3']
+    const title = document.getElementById('title')
+    title.innerHTML = titles[2];
 }
