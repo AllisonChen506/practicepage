@@ -9,7 +9,7 @@
   <script src="scripts.js"></script>
 </head>
 
-<body>
+<body onload="hello()">
     <!-- Create a header-->
     <div id="header" class= "d-block p-2 bg-dark text-white">
       <h2>Life is hard </h2>
@@ -24,7 +24,6 @@
 
         <!-- Title -->
         <h1 id="title" > Welcome to my page! </h1>
-
         <!--The following container should have an image -->
         <div id="image-container">
           <img src="https://cdn.clipart.email/fc72d3e8ee7d1d129eb02abb61b9e6db_pin-by-lisa-on-cute-hamsters-cute-stickers-cute-_540-540.jpeg">
@@ -35,11 +34,24 @@
         <button type="button" class="btn btn-primary" onclick="updateTitle()"> Change Title </button>
 
         <!-- Create two input boxex, a button, and a drop down menu -->
+        <br>
+        <br>
+        <input type= "text" id="firstnumber">
         <!-- The drop down menu should contain the following options: add, subtract, multiply -->
+        <select id = "operations">
+            <option value="plus">+</option>
+            <option value="subtract">-</option>
+            <option value="multiply">*</option>
+            <option value ="divide">/</option>
+        </select>
+        <input type= "text" id="secondnumber">
+        <button type="button" class="btn btn-primary" onclick="math()"> Go </button>
+
         <!-- When the button is clicked, it should either add, subtract, or multiply the numbers that the user has put in the text boxes -->
         <!-- The operation will depend on the drop down menu -->
         <!-- Generate the drop down menu using javascript -->
         <!-- Style everything using bootstrap -->
+        <p id="returnvalue">The value is</p>
       </div>
 
     <!-- End of Main Content -->
