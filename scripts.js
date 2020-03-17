@@ -56,4 +56,9 @@ function hello()
         x.add(option);
 
     }
+
+    let d = new Date();
+    let month = d.getMonth() + 1;
+    document.getElementById("demo").innerHTML = month + "-" + d.getDate() + "-" + d.getFullYear();
 }
+
