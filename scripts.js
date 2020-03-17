@@ -9,6 +9,7 @@ function updateTitle() {
 
 function math()
 {
+
     let n1 = document.getElementById('firstnumber').value;
     let n2 = document.getElementById('secondnumber').value;
     let operator = document.getElementById('operations').value;
@@ -18,22 +19,22 @@ function math()
     n2 = parseInt(n2);
     switch(operator)
     {
-        case "plus":
+        case "+":
             return1 = n1 + n2;
             console.log(return1);
             return2.innerHTML = "The value is " + return1;
             break;
-        case "subtract":
+        case "-":
             return1 = n1 - n2;
             console.log(return1);
             return2.innerHTML = "The value is " + return1;
             break;
-        case "multiply":
+        case "*":
             return1 = n1 * n2;
             console.log(return1);
             return2.innerHTML = "The value is " + return1;
             break;
-        case "divide":
+        case "/":
             return1 = n1 / n2;
             console.log(return1);
             return2.innerHTML = "The value is " + return1;
@@ -45,4 +46,14 @@ function math()
 function hello()
 {
     alert("Welcome");
+    let arithmetic = ["+", "-", "*", "/"];
+    let i;
+    for(i =0; i < arithmetic.length; i++)
+    {
+        let x = document.getElementById('operations')
+        let option = document.createElement('option');
+        option.text = arithmetic[i];
+        x.add(option);
+
+    }
 }
